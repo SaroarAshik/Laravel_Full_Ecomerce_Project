@@ -49,8 +49,7 @@ class CheckoutController extends Controller{
             return view('fontend.payment.hostedPayment',compact('data','total_amount','carts'));
         }elseif ($request->payment_method == 'sslEasy') {
             return view('fontend.payment.easyPayment',compact('data','total_amount','carts'));
-        }else
-        {
+        }else{
             return 'handcash';
         }
     }

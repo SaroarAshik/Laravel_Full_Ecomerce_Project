@@ -139,7 +139,7 @@ Route::group(['prefix'=>'user','middleware' =>['user','auth']], function(){
     Route::get('update/password',[UserController::class,'updatePassPage'])->name('update-password');
     Route::post('store/password',[UserController::class,'storePassword'])->name('password-store');
 
-
+    
     //wishlist
     Route::get('wishlist',[WishlistController::class,'create'])->name('wishlist');
     Route::get('/get-wishlist-product',[WishlistController::class,'readAllProduct']);
